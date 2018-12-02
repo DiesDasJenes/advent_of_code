@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6cfda48-590b-42f2-9bd4-8450c43abe3a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="401c09b5-dd25-4c8c-bdd6-616f9e562421" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/FileReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/InventoryManagementSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FileReaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/InventoryManagementSystemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testinput" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adc_1/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../adc_1/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adc_1/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../adc_1/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../adc_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../adc_1/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -21,62 +28,69 @@
     </projectState>
   </component>
   <component name="FUSProjectUsageTrigger">
-    <session id="-1559860645">
+    <session id="-1756374149">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="1" />
           <entry key="input" value="1" />
-          <entry key="java" value="4" />
+          <entry key="java" value="6" />
           <entry key="testinput" value="1" />
-          <entry key="testinput2" value="1" />
-          <entry key="testinput3" value="1" />
-          <entry key="testinput4" value="1" />
-          <entry key="testinput5" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="4" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="JAVA" value="6" />
+          <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="13" />
-          <entry key="gradle" value="2" />
-          <entry key="java" value="1532" />
-          <entry key="testinput" value="3" />
-          <entry key="testinput2" value="1" />
-          <entry key="testinput3" value="4" />
-          <entry key="testinput4" value="4" />
-          <entry key="testinput5" value="5" />
+          <entry key="gradle" value="3" />
+          <entry key="java" value="2231" />
+          <entry key="testinput" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="2" />
-          <entry key="JAVA" value="1532" />
-          <entry key="PLAIN_TEXT" value="30" />
+          <entry key="Groovy" value="3" />
+          <entry key="JAVA" value="2231" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ChronalCalibration.java">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
+            <state relative-caret-position="374">
+              <caret line="17" column="73" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/InventoryManagementSystemTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="38" column="95" selection-start-line="38" selection-start-column="95" selection-end-line="38" selection-end-column="95" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/InventoryManagementSystem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,10 +99,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ChronalCalibrationTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/input">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="5478">
+              <caret line="249" column="26" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/FileReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,17 +122,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testinput">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/input">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22814">
-              <caret line="1037" column="6" selection-start-line="1037" selection-start-column="6" selection-end-line="1037" selection-end-column="6" />
+            <state relative-caret-position="44">
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -143,14 +157,14 @@
         <entry>
           <key>
             <ExternalProjectPojo>
-              <option name="name" value="AdventOfCode_1" />
+              <option name="name" value="InventoryManagementSystem" />
               <option name="path" value="$PROJECT_DIR$" />
             </ExternalProjectPojo>
           </key>
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="AdventOfCode_1" />
+                <option name="name" value="InventoryManagementSystem" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
             </list>
@@ -164,7 +178,7 @@
           <value>
             <list>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by root project 'AdventOfCode_1'. [incubating]" />
+                <option name="description" value="Displays the components produced by root project 'InventoryManagementSystem'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="components" />
               </ExternalTaskPojo>
@@ -174,7 +188,7 @@
                 <option name="name" value="buildDependents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of root project 'AdventOfCode_1'." />
+                <option name="description" value="Displays the sub-projects of root project 'InventoryManagementSystem'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="projects" />
               </ExternalTaskPojo>
@@ -184,12 +198,12 @@
                 <option name="name" value="classes" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in root project 'AdventOfCode_1'. [incubating]" />
+                <option name="description" value="Displays the dependent components of components in root project 'InventoryManagementSystem'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependentComponents" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in root project 'AdventOfCode_1'." />
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'InventoryManagementSystem'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="buildEnvironment" />
               </ExternalTaskPojo>
@@ -214,7 +228,7 @@
                 <option name="name" value="jar" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of root project 'AdventOfCode_1'. [incubating]" />
+                <option name="description" value="Displays the configuration model of root project 'InventoryManagementSystem'. [incubating]" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="model" />
               </ExternalTaskPojo>
@@ -224,7 +238,7 @@
                 <option name="name" value="processResources" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from root project 'AdventOfCode_1'." />
+                <option name="description" value="Displays the tasks runnable from root project 'InventoryManagementSystem'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="tasks" />
               </ExternalTaskPojo>
@@ -244,7 +258,7 @@
                 <option name="name" value="compileJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in root project 'AdventOfCode_1'." />
+                <option name="description" value="Displays the insight into a specific dependency in root project 'InventoryManagementSystem'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencyInsight" />
               </ExternalTaskPojo>
@@ -269,7 +283,7 @@
                 <option name="name" value="compileTestJava" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in root project 'AdventOfCode_1'." />
+                <option name="description" value="Displays all dependencies declared in root project 'InventoryManagementSystem'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="dependencies" />
               </ExternalTaskPojo>
@@ -294,7 +308,7 @@
                 <option name="name" value="buildNeeded" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of root project 'AdventOfCode_1'." />
+                <option name="description" value="Displays the properties of root project 'InventoryManagementSystem'." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="properties" />
               </ExternalTaskPojo>
@@ -305,11 +319,11 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6174880738824" />
+        <entry key="$PROJECT_DIR$" value="6175008754737" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="51278614" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="2897626671" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2585518924" />
-        <entry key="$PROJECT_DIR$/settings.gradle" value="1085144803" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="2337719276" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -328,7 +342,7 @@
                   </entry>
                 </map>
               </option>
-              <option name="name" value="AdventOfCode_1" />
+              <option name="name" value="InventoryManagementSystem" />
               <option name="projectBuildClasspath">
                 <list>
                   <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8-all/41c9mvq2w0645xx6nsenaerjl/gradle-4.8/src/announce" />
@@ -495,14 +509,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/resources/input" />
-        <option value="$PROJECT_DIR$/src/test/resources/testinput" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/test/resources/testinput2" />
-        <option value="$PROJECT_DIR$/src/test/resources/testinput3" />
-        <option value="$PROJECT_DIR$/src/test/resources/testinput5" />
-        <option value="$PROJECT_DIR$/src/test/resources/testinput4" />
-        <option value="$PROJECT_DIR$/src/main/java/ChronalCalibration.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ChronalCalibrationTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/testinput" />
+        <option value="$PROJECT_DIR$/src/main/java/FileReader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/FileReaderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/InventoryManagementSystemTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/InventoryManagementSystem.java" />
       </list>
     </option>
   </component>
@@ -525,41 +537,40 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="AdventOfCode_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adc_1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="InventoryManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adc_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="AdventOfCode_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adc_1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="InventoryManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adc_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AdventOfCode_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adc_1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="InventoryManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adc_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="AdventOfCode_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adc_1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="InventoryManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adc_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="AdventOfCode_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adc_1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="AdventOfCode_1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="adc_1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="InventoryManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adc_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="InventoryManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="adc_2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -568,15 +579,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543719963824" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543762314478" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/Arbeit/Repository" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -605,7 +616,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ChronalCalibrationTest">
+  <component name="RunManager" selected="JUnit.InventoryManagementSystemTest.shouldReturnValidValueForPartOne">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -618,53 +629,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChronalCalibrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode_1_test" />
+    <configuration name="FileReaderTest.shouldReadFileFToListOfCharList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InventoryManagementSystem_test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ChronalCalibrationTest" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode_1_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ChronalCalibrationTest" />
-      <option name="METHOD_NAME" value="shouldReturnFirstRepeatedFrequency" />
+      <option name="MAIN_CLASS_NAME" value="FileReaderTest" />
+      <option name="METHOD_NAME" value="shouldReadFileFToListOfCharList" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode_1_test" />
+    <configuration name="InventoryManagementSystemTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InventoryManagementSystem_test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ChronalCalibrationTest" />
-      <option name="METHOD_NAME" value="shouldReturnFirstRepeatedFrequency1" />
+      <option name="MAIN_CLASS_NAME" value="InventoryManagementSystemTest" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryManagementSystemTest.shouldReturnListOfRepeatedLetters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InventoryManagementSystem_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InventoryManagementSystemTest" />
+      <option name="METHOD_NAME" value="shouldReturnListOfRepeatedLetters" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode_1_test" />
+    <configuration name="InventoryManagementSystemTest.shouldReturnTrueAsAIsRepeated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InventoryManagementSystem_test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ChronalCalibrationTest" />
-      <option name="METHOD_NAME" value="shouldReturnFirstRepeatedFrequency2" />
+      <option name="MAIN_CLASS_NAME" value="InventoryManagementSystemTest" />
+      <option name="METHOD_NAME" value="shouldReturnTrueAsAIsRepeated" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AdventOfCode_1_test" />
+    <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InventoryManagementSystem_test" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ChronalCalibrationTest" />
-      <option name="METHOD_NAME" value="shouldReturnFirstRepeatedFrequency4" />
+      <option name="MAIN_CLASS_NAME" value="InventoryManagementSystemTest" />
+      <option name="METHOD_NAME" value="shouldReturnValidValueForPartOne" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -695,19 +706,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ChronalCalibrationTest" />
-      <item itemvalue="JUnit.ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency" />
-      <item itemvalue="JUnit.ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency2" />
-      <item itemvalue="JUnit.ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency1" />
-      <item itemvalue="JUnit.ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency4" />
+      <item itemvalue="JUnit.InventoryManagementSystemTest.shouldReturnValidValueForPartOne" />
+      <item itemvalue="JUnit.FileReaderTest.shouldReadFileFToListOfCharList" />
+      <item itemvalue="JUnit.InventoryManagementSystemTest.shouldReturnListOfRepeatedLetters" />
+      <item itemvalue="JUnit.InventoryManagementSystemTest" />
+      <item itemvalue="JUnit.InventoryManagementSystemTest.shouldReturnTrueAsAIsRepeated" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ChronalCalibrationTest" />
-        <item itemvalue="JUnit.ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency2" />
-        <item itemvalue="JUnit.ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency" />
-        <item itemvalue="JUnit.ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency4" />
-        <item itemvalue="JUnit.ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency1" />
+        <item itemvalue="JUnit.InventoryManagementSystemTest.shouldReturnValidValueForPartOne" />
+        <item itemvalue="JUnit.InventoryManagementSystemTest.shouldReturnTrueAsAIsRepeated" />
+        <item itemvalue="JUnit.FileReaderTest.shouldReadFileFToListOfCharList" />
+        <item itemvalue="JUnit.InventoryManagementSystemTest" />
+        <item itemvalue="JUnit.InventoryManagementSystemTest.shouldReturnListOfRepeatedLetters" />
       </list>
     </recent_temporary>
   </component>
@@ -716,84 +727,84 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="f6cfda48-590b-42f2-9bd4-8450c43abe3a" name="Default Changelist" comment="" />
-      <created>1543690606023</created>
+      <changelist id="401c09b5-dd25-4c8c-bdd6-616f9e562421" name="Default Changelist" comment="" />
+      <created>1543751507879</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1543690606023</updated>
-      <workItem from="1543690616064" duration="7496000" />
-      <workItem from="1543751435406" duration="74000" />
+      <updated>1543751507879</updated>
+      <workItem from="1543751511738" duration="10225000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ChronalCalibrationTest_shouldReturnFirstRepeatedFrequency1 - 2018.12.02 at 03h 53m 59s.xml">
-      <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency1" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnTrueAsAIsRepeated - 2018.12.02 at 15h 31m 25s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnTrueAsAIsRepeated" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChronalCalibrationTest - 2018.12.02 at 03h 54m 06s.xml">
-      <configuration name="ChronalCalibrationTest" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 32m 44s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChronalCalibrationTest - 2018.12.02 at 03h 54m 33s.xml">
-      <configuration name="ChronalCalibrationTest" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 33m 38s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChronalCalibrationTest_shouldReturnFirstRepeatedFrequency4 - 2018.12.02 at 03h 58m 29s.xml">
-      <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency4" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 34m 03s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChronalCalibrationTest_shouldReturnFirstRepeatedFrequency4 - 2018.12.02 at 03h 58m 36s.xml">
-      <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency4" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 36m 11s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChronalCalibrationTest_shouldReturnFirstRepeatedFrequency4 - 2018.12.02 at 03h 59m 48s.xml">
-      <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency4" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 39m 14s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChronalCalibrationTest_shouldReturnFirstRepeatedFrequency4 - 2018.12.02 at 04h 00m 15s.xml">
-      <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency4" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 39m 44s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChronalCalibrationTest_shouldReturnFirstRepeatedFrequency4 - 2018.12.02 at 04h 00m 50s.xml">
-      <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency4" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 47m 00s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChronalCalibrationTest - 2018.12.02 at 04h 00m 55s.xml">
-      <configuration name="ChronalCalibrationTest" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 49m 32s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChronalCalibrationTest_shouldReturnFirstRepeatedFrequency - 2018.12.02 at 04h 02m 04s.xml">
-      <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 50m 53s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8057000" />
+    <option name="totallyTimeSpent" value="10225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15874036" />
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12082262" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Image Layers" order="6" />
+      <window_info anchor="bottom" id="Build" weight="0.32974428" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" weight="0.32974428" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32974428" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39973083" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Build" order="7" weight="0.32974428" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32974428" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
-      <window_info anchor="right" id="Gradle" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -802,87 +813,93 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/InventoryManagementSystem.java</url>
+          <line>13</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/InventoryManagementSystem.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>internalCount == iterations</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        <state relative-caret-position="374">
+          <caret line="17" column="73" selection-start-line="17" selection-start-column="73" selection-end-line="17" selection-end-column="73" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/stream/ReferencePipeline.java">
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/function/ToIntFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="202" column="27" selection-start-line="202" selection-start-column="27" selection-end-line="202" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testinput2">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testinput5">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testinput3">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="1047" selection-start-line="1047" selection-end-line="1047" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testinput4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ChronalCalibration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="27" column="40" selection-start-line="27" selection-start-column="40" selection-end-line="27" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ChronalCalibrationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testinput">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="2" />
+        <state relative-caret-position="297">
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/input">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22814">
-          <caret line="1037" column="6" selection-start-line="1037" selection-start-column="6" selection-end-line="1037" selection-end-column="6" />
+        <state relative-caret-position="5478">
+          <caret line="249" column="26" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/FileReaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="20" column="89" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/InventoryManagementSystemTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="38" column="95" selection-start-line="38" selection-start-column="95" selection-end-line="38" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testinput">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/InventoryManagementSystem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -939,7 +956,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>AdventOfCode_1</last-edited>
+          <last-edited>InventoryManagementSystem</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -36,5 +37,47 @@ public class InventoryManagementSystem {
 
     public int calculateChecksum(Map<Integer, Integer> repeatedLetters) {
         return repeatedLetters.get(2) * repeatedLetters.get(3);
+    }
+
+    public String getBoxName(String path) {
+        List<List<Character>> puzzleInput = FileReader.readFileFToListOfCharListFrom(path);
+        String output = "";
+        for (List<Character> list: puzzleInput
+             ) {
+            List<Character> searchedValue = getSearchedList(list,puzzleInput);
+            if(!searchedValue.isEmpty()){
+                output = reduceDifference(list,searchedValue);
+            }
+        }
+        return output;
+    }
+
+    private String reduceDifference(List<Character> list, List<Character> searchedValue) {
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < list.size(); i++){
+            if(list.get(i).equals(searchedValue.get(i))){
+                stringBuilder.append(searchedValue.get(i));
+            }
+        }
+        return stringBuilder.toString();
+    }
+
+    public List<Character> getSearchedList(List<Character> currentList, List<List<Character>> puzzleInput){
+        int difference=0;
+        List<Character> searchedValue = new ArrayList<>();
+        for (List<Character> list: puzzleInput
+        ) {
+            for (int i = 0; i < list.size(); i++){
+                if(!list.get(i).equals(currentList.get(i))){
+                    difference+=1;
+                }
+            }
+            if(difference==1){
+                return list;
+            }
+            difference=0;
+        }
+
+        return searchedValue;
     }
 }

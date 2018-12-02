@@ -17,6 +17,7 @@ public class InventoryManagementSystemTest {
     private InventoryManagementSystem managementSystem;
     private final String puzzleInput = "src\\test\\resources\\input";
     private final String puzzleTestInput = "src\\test\\resources\\testinput";
+    private final String puzzleTestInputPartTwo = "src\\test\\resources\\testinputPartTwo";
     @Before
     public void setUp() throws Exception {
         managementSystem = new InventoryManagementSystem();
@@ -56,5 +57,19 @@ public class InventoryManagementSystemTest {
     @Test
     public void shouldReturnTrueAsAIsRepeated() {
         assertThat(managementSystem.isRepeated(2,'a', Arrays.asList('b','a','b','a','b','c')),is(true));
+    }
+
+    @Test
+    public void shouldReturnValidValueForTestPartTwo() {
+        String expectedName = managementSystem.getBoxName(puzzleTestInputPartTwo);
+
+        assertThat(expectedName,is("fgij"));
+    }
+
+    @Test
+    public void shouldReturnValidValueForPartTwo() {
+        String expectedName = managementSystem.getBoxName(puzzleInput);
+
+        assertThat(expectedName,is("rteotyxzbodglnpkudawhijsc"));
     }
 }

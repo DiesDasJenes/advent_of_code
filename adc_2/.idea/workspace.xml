@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="401c09b5-dd25-4c8c-bdd6-616f9e562421" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/FileReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/InventoryManagementSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FileReaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/InventoryManagementSystemTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/input" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testinput" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adc_1/.gradle/4.8/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../adc_1/.gradle/4.8/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adc_1/.gradle/4.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../adc_1/.gradle/4.8/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../adc_1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../adc_1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testInputPartTwo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/InventoryManagementSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InventoryManagementSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/InventoryManagementSystemTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/InventoryManagementSystemTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -39,28 +33,29 @@
         <counts>
           <entry key="gradle" value="1" />
           <entry key="input" value="1" />
-          <entry key="java" value="6" />
+          <entry key="java" value="7" />
+          <entry key="testInputPartTwo" value="1" />
           <entry key="testinput" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="6" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="JAVA" value="7" />
+          <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="3" />
-          <entry key="java" value="2231" />
+          <entry key="java" value="3076" />
           <entry key="testinput" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="2231" />
+          <entry key="JAVA" value="3076" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -80,8 +75,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/InventoryManagementSystemTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="38" column="95" selection-start-line="38" selection-start-column="95" selection-end-line="38" selection-end-column="95" />
+            <state relative-caret-position="-1054">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -89,8 +84,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/InventoryManagementSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+            <state relative-caret-position="242">
+              <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -99,10 +94,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/testInputPartTwo">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/input">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5478">
-              <caret line="249" column="26" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="26" />
+            <state relative-caret-position="-1276">
+              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -123,7 +127,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/resources/testinput">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="44">
-              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+              <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -513,6 +517,7 @@
         <option value="$PROJECT_DIR$/src/test/resources/testinput" />
         <option value="$PROJECT_DIR$/src/main/java/FileReader.java" />
         <option value="$PROJECT_DIR$/src/test/java/FileReaderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/testInputPartTwo" />
         <option value="$PROJECT_DIR$/src/test/java/InventoryManagementSystemTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/InventoryManagementSystem.java" />
       </list>
@@ -585,7 +590,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543762314478" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543767882434" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/Arbeit/Repository" />
@@ -616,7 +621,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.InventoryManagementSystemTest.shouldReturnValidValueForPartOne">
+  <component name="RunManager" selected="JUnit.InventoryManagementSystemTest.shouldReturnValidValueForPartTwo">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -649,17 +654,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InventoryManagementSystemTest.shouldReturnListOfRepeatedLetters" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="InventoryManagementSystem_test" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="InventoryManagementSystemTest" />
-      <option name="METHOD_NAME" value="shouldReturnListOfRepeatedLetters" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="InventoryManagementSystemTest.shouldReturnTrueAsAIsRepeated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="InventoryManagementSystem_test" />
       <option name="PACKAGE_NAME" value="" />
@@ -676,6 +670,17 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="InventoryManagementSystemTest" />
       <option name="METHOD_NAME" value="shouldReturnValidValueForPartOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartTwo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="InventoryManagementSystem_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="InventoryManagementSystemTest" />
+      <option name="METHOD_NAME" value="shouldReturnValidValueForPartTwo" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -708,17 +713,17 @@
     <list>
       <item itemvalue="JUnit.InventoryManagementSystemTest.shouldReturnValidValueForPartOne" />
       <item itemvalue="JUnit.FileReaderTest.shouldReadFileFToListOfCharList" />
-      <item itemvalue="JUnit.InventoryManagementSystemTest.shouldReturnListOfRepeatedLetters" />
       <item itemvalue="JUnit.InventoryManagementSystemTest" />
       <item itemvalue="JUnit.InventoryManagementSystemTest.shouldReturnTrueAsAIsRepeated" />
+      <item itemvalue="JUnit.InventoryManagementSystemTest.shouldReturnValidValueForPartTwo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.InventoryManagementSystemTest.shouldReturnValidValueForPartTwo" />
+        <item itemvalue="JUnit.InventoryManagementSystemTest" />
         <item itemvalue="JUnit.InventoryManagementSystemTest.shouldReturnValidValueForPartOne" />
         <item itemvalue="JUnit.InventoryManagementSystemTest.shouldReturnTrueAsAIsRepeated" />
         <item itemvalue="JUnit.FileReaderTest.shouldReadFileFToListOfCharList" />
-        <item itemvalue="JUnit.InventoryManagementSystemTest" />
-        <item itemvalue="JUnit.InventoryManagementSystemTest.shouldReturnListOfRepeatedLetters" />
       </list>
     </recent_temporary>
   </component>
@@ -732,44 +737,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543751507879</updated>
-      <workItem from="1543751511738" duration="10225000" />
+      <workItem from="1543751511738" duration="15348000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="InventoryManagementSystemTest_shouldReturnTrueAsAIsRepeated - 2018.12.02 at 15h 31m 25s.xml">
-      <configuration name="InventoryManagementSystemTest.shouldReturnTrueAsAIsRepeated" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartTwo - 2018.12.02 at 17h 07m 37s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartTwo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 32m 44s.xml">
-      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartTwo - 2018.12.02 at 17h 10m 24s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartTwo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 33m 38s.xml">
-      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartTwo - 2018.12.02 at 17h 13m 06s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartTwo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 34m 03s.xml">
-      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartTwo - 2018.12.02 at 17h 16m 14s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartTwo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 36m 11s.xml">
-      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartTwo - 2018.12.02 at 17h 19m 16s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartTwo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 39m 14s.xml">
-      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartTwo - 2018.12.02 at 17h 19m 18s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartTwo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 39m 44s.xml">
-      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartTwo - 2018.12.02 at 17h 19m 52s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartTwo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 47m 00s.xml">
-      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartTwo - 2018.12.02 at 17h 19m 57s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartTwo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 49m 32s.xml">
-      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartTwo - 2018.12.02 at 17h 20m 30s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartTwo" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartOne - 2018.12.02 at 15h 50m 53s.xml">
-      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartOne" configurationId="JUnit" />
+    <history-entry file="InventoryManagementSystemTest_shouldReturnValidValueForPartTwo - 2018.12.02 at 17h 22m 29s.xml">
+      <configuration name="InventoryManagementSystemTest.shouldReturnValidValueForPartTwo" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10225000" />
+    <option name="totallyTimeSpent" value="15348000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -818,15 +823,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/InventoryManagementSystem.java</url>
-          <line>13</line>
+          <line>75</line>
           <properties />
-          <option name="timeStamp" value="47" />
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/InventoryManagementSystem.java</url>
-          <line>14</line>
+          <line>46</line>
           <properties />
-          <option name="timeStamp" value="48" />
+          <option name="timeStamp" value="70" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -841,6 +846,44 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/FileReaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="20" column="89" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testinput">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/FileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testInputPartTwo">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/input">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1276">
+          <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -855,48 +898,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/input">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5478">
-          <caret line="249" column="26" selection-start-line="249" selection-start-column="26" selection-end-line="249" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/FileReaderTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="20" column="89" selection-start-line="20" selection-start-column="89" selection-end-line="20" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/InventoryManagementSystemTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="38" column="95" selection-start-line="38" selection-start-column="95" selection-end-line="38" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testinput">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/FileReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="25" column="56" selection-start-line="25" selection-start-column="56" selection-end-line="25" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-1054">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/InventoryManagementSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+        <state relative-caret-position="242">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

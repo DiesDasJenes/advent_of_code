@@ -15,20 +15,63 @@ public class ChronalCalibrationTest {
 
     @Before
     public void setUp() throws Exception {
-        chronalCalibration = new ChronalCalibration(0);
+        chronalCalibration = new ChronalCalibration();
     }
 
     @Test
     public void shouldSUMAllValues() {
-        chronalCalibration.getLastFrequency("src\\test\\resources\\testinput");
+        int actualFrequency = chronalCalibration.getLastFrequency("src\\test\\resources\\testinput");
 
-        assertThat(chronalCalibration.frequency, is(3));
+        assertThat(actualFrequency, is(3));
     }
-    
+
+
     @Test
     public void shouldReturnLastFrequency() {
-        chronalCalibration.getLastFrequency("src\\test\\resources\\input");
+        int actualFrequency = chronalCalibration.getLastFrequency("src\\test\\resources\\input");
 
-        System.out.println(chronalCalibration.frequency);
+        System.out.println("Part One:" +actualFrequency);
+    }
+
+    @Test
+    public void shouldReturnFirstRepeatedFrequency() {
+        int repeatedFrequency = chronalCalibration.getFirstRepeatedFrequency("src\\test\\resources\\input");
+
+        System.out.println("Part Two:" +repeatedFrequency);
+    }
+
+    @Test
+    public void shouldReturnFirstRepeatedFrequency1() {
+        int repeatedFrequency = chronalCalibration.getFirstRepeatedFrequency("src\\test\\resources\\testinput");
+
+        assertThat(repeatedFrequency, is(2));
+    }
+
+    @Test
+    public void shouldReturnFirstRepeatedFrequency2() {
+        int repeatedFrequency = chronalCalibration.getFirstRepeatedFrequency("src\\test\\resources\\testinput2");
+
+        assertThat(repeatedFrequency, is(1));
+    }
+
+    @Test
+    public void shouldReturnFirstRepeatedFrequency3() {
+        int repeatedFrequency = chronalCalibration.getFirstRepeatedFrequency("src\\test\\resources\\testinput3");
+
+        assertThat(repeatedFrequency, is(10));
+    }
+
+    @Test
+    public void shouldReturnFirstRepeatedFrequency4() {
+        int repeatedFrequency = chronalCalibration.getFirstRepeatedFrequency("src\\test\\resources\\testinput4");
+
+        assertThat(repeatedFrequency, is(14));
+    }
+
+    @Test
+    public void shouldReturnFirstRepeatedFrequency5() {
+        int repeatedFrequency = chronalCalibration.getFirstRepeatedFrequency("src\\test\\resources\\testinput5");
+
+        assertThat(repeatedFrequency, is(5));
     }
 }

@@ -1,19 +1,35 @@
 import java.io.File;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class ChronalCalibration {
 
-    public int frequency;
-
-
-    public ChronalCalibration(int frequency) {
-        this.frequency = frequency;
+    public ChronalCalibration() {
     }
 
-    public void getLastFrequency(String filePath) {
-        List<Integer> metric = readInputFile(filePath);
-        metric.forEach(integer -> frequency+=integer);
+    public int getLastFrequency(String filePath) {
+        List<Integer> frequencies = readInputFile(filePath);
+        return frequencies.stream().mapToInt(integer -> integer).sum();
+    }
+
+    public Integer getFirstRepeatedFrequency(String filePath) {
+        List<Integer> frequencies = readInputFile(filePath);
+        int resultingFrequency = 0;
+        ArrayList<Integer> stepsInBetween = new ArrayList<>();
+
+        while (true) {
+            for (int integer : frequencies
+            ) {
+                int tmp = stepsInBetween.size() == 0 ? 0 : stepsInBetween.get(stepsInBetween.size()-1);
+                resultingFrequency = tmp + integer;
+                if(stepsInBetween.contains(resultingFrequency)){
+                    return resultingFrequency;
+                }
+                stepsInBetween.add(resultingFrequency);
+            }
+        }
     }
 
 

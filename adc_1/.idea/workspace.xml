@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f6cfda48-590b-42f2-9bd4-8450c43abe3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ChronalCalibration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/ChronalCalibrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/input" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/testinput" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../REAMDE.md" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testinput2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testinput3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testinput4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testinput5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ChronalCalibration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ChronalCalibration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/ChronalCalibrationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/ChronalCalibrationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ChronalCalibration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ChronalCalibration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ChronalCalibrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ChronalCalibrationTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -37,29 +39,38 @@
         <counts>
           <entry key="gradle" value="1" />
           <entry key="input" value="1" />
-          <entry key="java" value="2" />
+          <entry key="java" value="4" />
           <entry key="testinput" value="1" />
+          <entry key="testinput2" value="1" />
+          <entry key="testinput3" value="1" />
+          <entry key="testinput4" value="1" />
+          <entry key="testinput5" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="1" />
-          <entry key="JAVA" value="2" />
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="JAVA" value="4" />
+          <entry key="PLAIN_TEXT" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="dummy" value="13" />
           <entry key="gradle" value="2" />
-          <entry key="java" value="748" />
+          <entry key="java" value="1532" />
           <entry key="testinput" value="3" />
+          <entry key="testinput2" value="1" />
+          <entry key="testinput3" value="4" />
+          <entry key="testinput4" value="4" />
+          <entry key="testinput5" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="2" />
-          <entry key="JAVA" value="748" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="JAVA" value="1532" />
+          <entry key="PLAIN_TEXT" value="30" />
         </counts>
       </usages-collector>
     </session>
@@ -69,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ChronalCalibration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+            <state relative-caret-position="54">
+              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,8 +92,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ChronalCalibrationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+            <state relative-caret-position="-100">
+              <caret line="39" column="57" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,10 +102,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/testinput2">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+            <state relative-caret-position="22">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/testinput3">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/testinput5">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/testinput4">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -102,8 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testinput">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="2" />
+            <state relative-caret-position="66">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -500,6 +538,10 @@
         <option value="$PROJECT_DIR$/src/test/resources/input" />
         <option value="$PROJECT_DIR$/src/test/resources/testinput" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/resources/testinput2" />
+        <option value="$PROJECT_DIR$/src/test/resources/testinput3" />
+        <option value="$PROJECT_DIR$/src/test/resources/testinput5" />
+        <option value="$PROJECT_DIR$/src/test/resources/testinput4" />
         <option value="$PROJECT_DIR$/src/main/java/ChronalCalibration.java" />
         <option value="$PROJECT_DIR$/src/test/java/ChronalCalibrationTest.java" />
       </list>
@@ -572,12 +614,16 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543715159439" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543719963824" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$USER_HOME$/Dropbox/Arbeit/Repository" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -622,22 +668,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChronalCalibrationTest.shouldReadFistLine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode_1_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ChronalCalibrationTest" />
-      <option name="METHOD_NAME" value="shouldReadFistLine" />
+      <option name="METHOD_NAME" value="shouldReturnFirstRepeatedFrequency" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChronalCalibrationTest.shouldSUMAllValues" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AdventOfCode_1_test" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ChronalCalibrationTest" />
-      <option name="METHOD_NAME" value="shouldSUMAllValues" />
+      <option name="METHOD_NAME" value="shouldReturnFirstRepeatedFrequency1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode_1_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ChronalCalibrationTest" />
+      <option name="METHOD_NAME" value="shouldReturnFirstRepeatedFrequency2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="AdventOfCode_1_test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ChronalCalibrationTest" />
+      <option name="METHOD_NAME" value="shouldReturnFirstRepeatedFrequency4" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -668,15 +736,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ChronalCalibrationTest.shouldReadFistLine" />
-      <item itemvalue="JUnit.ChronalCalibrationTest.shouldSUMAllValues" />
       <item itemvalue="JUnit.ChronalCalibrationTest" />
+      <item itemvalue="JUnit.ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency" />
+      <item itemvalue="JUnit.ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency2" />
+      <item itemvalue="JUnit.ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency1" />
+      <item itemvalue="JUnit.ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency4" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ChronalCalibrationTest" />
-        <item itemvalue="JUnit.ChronalCalibrationTest.shouldSUMAllValues" />
-        <item itemvalue="JUnit.ChronalCalibrationTest.shouldReadFistLine" />
+        <item itemvalue="JUnit.ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency2" />
+        <item itemvalue="JUnit.ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency" />
+        <item itemvalue="JUnit.ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency4" />
+        <item itemvalue="JUnit.ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency1" />
       </list>
     </recent_temporary>
   </component>
@@ -690,44 +762,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1543690606023</updated>
-      <workItem from="1543690616064" duration="2818000" />
+      <workItem from="1543690616064" duration="7496000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ChronalCalibrationTest_shouldSUMAllValues - 2018.12.01 at 20h 29m 17s.xml">
-      <configuration name="ChronalCalibrationTest.shouldSUMAllValues" configurationId="JUnit" />
+    <history-entry file="ChronalCalibrationTest_shouldReturnFirstRepeatedFrequency1 - 2018.12.02 at 03h 53m 59s.xml">
+      <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChronalCalibrationTest_shouldSUMAllValues - 2018.12.01 at 20h 30m 49s.xml">
-      <configuration name="ChronalCalibrationTest.shouldSUMAllValues" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ChronalCalibrationTest_shouldSUMAllValues - 2018.12.01 at 20h 31m 29s.xml">
-      <configuration name="ChronalCalibrationTest.shouldSUMAllValues" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ChronalCalibrationTest_shouldSUMAllValues - 2018.12.01 at 20h 33m 41s.xml">
-      <configuration name="ChronalCalibrationTest.shouldSUMAllValues" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ChronalCalibrationTest_shouldSUMAllValues - 2018.12.01 at 20h 35m 04s.xml">
-      <configuration name="ChronalCalibrationTest.shouldSUMAllValues" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ChronalCalibrationTest - 2018.12.01 at 20h 35m 44s.xml">
+    <history-entry file="ChronalCalibrationTest - 2018.12.02 at 03h 54m 06s.xml">
       <configuration name="ChronalCalibrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChronalCalibrationTest - 2018.12.01 at 20h 36m 13s.xml">
+    <history-entry file="ChronalCalibrationTest - 2018.12.02 at 03h 54m 33s.xml">
       <configuration name="ChronalCalibrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChronalCalibrationTest - 2018.12.02 at 02h 40m 34s.xml">
+    <history-entry file="ChronalCalibrationTest_shouldReturnFirstRepeatedFrequency4 - 2018.12.02 at 03h 58m 29s.xml">
+      <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ChronalCalibrationTest_shouldReturnFirstRepeatedFrequency4 - 2018.12.02 at 03h 58m 36s.xml">
+      <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ChronalCalibrationTest_shouldReturnFirstRepeatedFrequency4 - 2018.12.02 at 03h 59m 48s.xml">
+      <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ChronalCalibrationTest_shouldReturnFirstRepeatedFrequency4 - 2018.12.02 at 04h 00m 15s.xml">
+      <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ChronalCalibrationTest_shouldReturnFirstRepeatedFrequency4 - 2018.12.02 at 04h 00m 50s.xml">
+      <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency4" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ChronalCalibrationTest - 2018.12.02 at 04h 00m 55s.xml">
       <configuration name="ChronalCalibrationTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ChronalCalibrationTest - 2018.12.02 at 02h 42m 32s.xml">
-      <configuration name="ChronalCalibrationTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ChronalCalibrationTest - 2018.12.02 at 02h 43m 09s.xml">
-      <configuration name="ChronalCalibrationTest" configurationId="JUnit" />
+    <history-entry file="ChronalCalibrationTest_shouldReturnFirstRepeatedFrequency - 2018.12.02 at 04h 02m 04s.xml">
+      <configuration name="ChronalCalibrationTest.shouldReturnFirstRepeatedFrequency" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2818000" />
+    <option name="totallyTimeSpent" value="7496000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -738,7 +810,7 @@
       <window_info id="UI Designer" />
       <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15681234" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Build" weight="0.32974428" />
       <window_info anchor="bottom" id="Terminal" />
@@ -747,9 +819,9 @@
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" weight="0.32974428" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32974428" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32974428" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -771,6 +843,24 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ChronalCalibration.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ChronalCalibration.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/resources/input">
       <provider selected="true" editor-type-id="text-editor">
@@ -788,15 +878,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/testinput">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/util/stream/ReferencePipeline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="202" column="27" selection-start-line="202" selection-start-column="27" selection-end-line="202" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testinput2">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="2" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testinput5">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testinput3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/java.base/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="1047" selection-start-line="1047" selection-end-line="1047" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testinput4">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ChronalCalibration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+        <state relative-caret-position="54">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -805,8 +937,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ChronalCalibrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        <state relative-caret-position="-100">
+          <caret line="39" column="57" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -816,9 +948,81 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>bigdecimal (v1.2.8, ruby-2.3.1-p112) [gem]</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>AdventOfCode_1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

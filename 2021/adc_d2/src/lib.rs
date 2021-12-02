@@ -60,6 +60,16 @@ fn get_command(input: &String) -> Command {
 mod test {
     use crate::Command::Forward;
     use crate::{get_command, get_solution_for_part_one, get_solution_for_part_two};
+    fn get_test_input() -> Vec<String> {
+        vec![
+            "forward 5".to_string(),
+            "down 5".to_string(),
+            "forward 8".to_string(),
+            "up 3".to_string(),
+            "down 8".to_string(),
+            "forward 2".to_string(),
+        ]
+    }
 
     #[test]
     fn should_identify_command() {
@@ -71,14 +81,7 @@ mod test {
 
     #[test]
     fn should_calculate_position_of_old_submarine() {
-        let test_input_lines: Vec<String> = vec![
-            "forward 5".to_string(),
-            "down 5".to_string(),
-            "forward 8".to_string(),
-            "up 3".to_string(),
-            "down 8".to_string(),
-            "forward 2".to_string(),
-        ];
+        let test_input_lines: Vec<String> = get_test_input();
         let expected_result = 150;
         let actual_result = get_solution_for_part_one(&test_input_lines);
 
@@ -87,14 +90,7 @@ mod test {
 
     #[test]
     fn should_calculate_position_of_new_submarine() {
-        let test_input_lines: Vec<String> = vec![
-            "forward 5".to_string(),
-            "down 5".to_string(),
-            "forward 8".to_string(),
-            "up 3".to_string(),
-            "down 8".to_string(),
-            "forward 2".to_string(),
-        ];
+        let test_input_lines: Vec<String> = get_test_input();
         let expected_result = 900;
         let actual_result = get_solution_for_part_two(&test_input_lines);
 

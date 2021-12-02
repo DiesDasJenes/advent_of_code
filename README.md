@@ -1,8 +1,5 @@
-## Advent of Code 2018
+# Advent of Code
 
-This repository is full of christmas joy. It's time to open the christmas calendar for programmers.
+This repository contains my solutions to the various puzzles from [Advent of Code](https://adventofcode.com/)
 
-2018
 
-* Day 1: Java
-* Day 2: Java

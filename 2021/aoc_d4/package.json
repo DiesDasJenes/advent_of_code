@@ -1,12 +1,15 @@
 {
-  "name": "aoc_d4",
+  "name": "adc_d1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node index.js",
+    "test": "jest"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Gabriel",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.4.2"
+  }
 }

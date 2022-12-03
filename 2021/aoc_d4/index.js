@@ -74,13 +74,13 @@ const checkLineOfTableForBingo = (indexOfLine, table) => {
 	return isBingo
 }
 
+const checkIfBingo = (xCoordinateOfFoundNumber, yCoordinateOfFoundNumber, table) => {
+	return checkLineOfTableForBingo(xCoordinateOfFoundNumber, table) || checkColumnOfTableForBingo(yCoordinateOfFoundNumber, table)
+}
+
 const markNumberAndUpdateTables = (tables, indexedNumber) => {
 	tables[indexedNumber.block][indexedNumber.x][indexedNumber.y].isMarked = true
 	return tables
-}
-
-const checkIfBingo = (xCoordinateOfFoundNumber, yCoordinateOfFoundNumber, table) => {
-	return checkLineOfTableForBingo(xCoordinateOfFoundNumber, table) || checkColumnOfTableForBingo(yCoordinateOfFoundNumber, table)
 }
 
 const getSumOfAllUnmarkedNumbers = (table) => {

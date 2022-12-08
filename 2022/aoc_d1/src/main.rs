@@ -44,8 +44,6 @@ fn part2(input: &Input) -> u32 {
         }
     }
     
-    //print_vector(&calories_per_elf, "All Numbers");
-
     return get_sum_of_top_three_highest_numbers(&calories_per_elf);
 }
 
@@ -56,8 +54,8 @@ fn get_sum_of_top_three_highest_numbers(vector: &Vec<u32>) -> u32 {
 
     let highest_numbers: Vec<&u32> = unique_numbers.iter().take(3).collect();
 
-    //print_vector_with_references(&highest_numbers, "Highest Numbers");
     
+    println!("{:?}", highest_numbers);
     highest_numbers.into_iter().sum()
 }
 
@@ -70,21 +68,9 @@ fn get_unique_number(vector: &Vec<u32>) -> Vec<u32> {
         }
     }
     
-    //print_vector(&unqiue_numbers, "Unique Numbers");
+    println!("{:?}", unqiue_numbers);
     return unqiue_numbers;
 }
-
-// fn _print_vector(vector: &Vec<u32>, message: &str) {
-    // let s = vector.iter().map(|n| n.to_string()).collect::<Vec<String>>().join(" ");
-// 
-    // println!("{} {}",message, s);
-// }
-
-// fn _print_vector_with_references(vector: &Vec<&u32>, message: &str) {
-    // let s = vector.iter().map(|n| n.to_string()).collect::<Vec<String>>().join(" ");
-// 
-    // println!("{} {}",message, s);
-// }
 
 fn main() {
     let puzzle_input = fs::read_to_string("resources/puzzle_input.txt").unwrap();

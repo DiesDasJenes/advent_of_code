@@ -57,10 +57,29 @@ fn get_moves_of_players_for_round(player_move_inputs: &str) -> (PlayerMoveType, 
     (enemy_move.unwrap(), my_move.unwrap())
 }
 
+fn get_strategy_guide_for_round(player_move_inputs: &str) -> (PlayerMoveType, GameResultType) {
+    let strategy_tipps: Vec<&str> = player_move_inputs.split(' ').collect();
+    
+    let opponent_move = get_move(&strategy_tipps, 0);
+    let strategy_guide = get_tip(strategy_tipps.get(1).unwrap());
+
+
+    (opponent_move.unwrap(), strategy_guide)
+}
+
 fn get_move(player_moves: &Vec<&str>, index: usize) -> Option<PlayerMoveType> {
     MOVE_INDICATOR.iter()
     .find(|x| x.indicator.contains(player_moves.get(index).unwrap()))
     .map(|s| s.move_type)
+}
+
+fn get_tip(player_moves: &str) -> GameResultType {
+    match player_moves {
+        "X" => return GameResultType::Lose,
+        "Y" => return GameResultType::Draw,
+        "Z" => return GameResultType::Win,
+        _ => panic!("THIS CHARACTER WAS NOT FOUND")
+    }
 }
 
 fn determine_result_of_round(playermoves: &str) -> (GameResultType, PlayerMoveType) {
@@ -77,13 +96,20 @@ fn determine_result_of_round(playermoves: &str) -> (GameResultType, PlayerMoveTy
     }
 }
 
-fn calculate_score_of_round(playermoves: &str) -> u32 {
-    let result_of_round = determine_result_of_round(playermoves);
-    
-    let game_score = GAME_RESULT_SCORES.iter().find(|x| result_of_round.0.eq(&x.result_type)).map(|f| f.score).unwrap();
-    let move_score = MOVE_SCORES.iter().find(|x| result_of_round.1.eq(&x.result_type)).map(|f| f.score).unwrap();
-    
-     game_score + move_score
+fn determine_result_of_round_with_tips(playermoves: &str) -> (GameResultType, PlayerMoveType) {
+    let moves = get_strategy_guide_for_round(playermoves);
+
+    match moves{
+        (PlayerMoveType::Rock, GameResultType::Win) => (moves.1, PlayerMoveType::Paper),
+        (PlayerMoveType::Rock, GameResultType::Lose) => (moves.1, PlayerMoveType::Scissors),
+        (PlayerMoveType::Rock, GameResultType::Draw) => (moves.1, PlayerMoveType::Rock),
+        (PlayerMoveType::Paper, GameResultType::Win) => (moves.1, PlayerMoveType::Scissors),
+        (PlayerMoveType::Paper, GameResultType::Lose) => (moves.1, PlayerMoveType::Rock),
+        (PlayerMoveType::Paper, GameResultType::Draw) => (moves.1, PlayerMoveType::Paper),
+        (PlayerMoveType::Scissors, GameResultType::Win) => (moves.1, PlayerMoveType::Rock),
+        (PlayerMoveType::Scissors, GameResultType::Lose) => (moves.1, PlayerMoveType::Paper),
+        (PlayerMoveType::Scissors, GameResultType::Draw) => (moves.1, PlayerMoveType::Scissors),
+    }
 }
 
 fn parse_input(puzzle_input: &str) -> Input {
@@ -97,14 +123,29 @@ fn parse_input(puzzle_input: &str) -> Input {
 fn part1(input: &Input) -> u32 {
     let mut total_score: u32 = 0;
     for round in input.iter() {
-        total_score += calculate_score_of_round(round);
+        let result_of_round = determine_result_of_round(&round);
+    
+        let game_score = GAME_RESULT_SCORES.iter().find(|x| result_of_round.0.eq(&x.result_type)).map(|f| f.score).unwrap();
+        let move_score = MOVE_SCORES.iter().find(|x| result_of_round.1.eq(&x.result_type)).map(|f| f.score).unwrap();
+    
+        total_score += game_score + move_score;
     }
 
     total_score
 }
 
-fn part2(_input: &Input) -> u32 {
-    0
+fn part2(input: &Input) -> u32 {
+    let mut total_score: u32 = 0;
+    for round in input.iter() {
+        let result_of_round = determine_result_of_round_with_tips(&round);
+    
+        let game_score = GAME_RESULT_SCORES.iter().find(|x| result_of_round.0.eq(&x.result_type)).map(|f| f.score).unwrap();
+        let move_score = MOVE_SCORES.iter().find(|x| result_of_round.1.eq(&x.result_type)).map(|f| f.score).unwrap();
+    
+        total_score += game_score + move_score;
+    }
+
+    total_score
 }
 
 
@@ -118,15 +159,24 @@ fn main() {
 
 #[cfg(test)]
 mod test {
-    use crate::{part1,parse_input, get_moves_of_players_for_round,determine_result_of_round, PlayerMoveType, GameResultType, calculate_score_of_round};
+    use crate::{part1, part2,parse_input, get_moves_of_players_for_round,determine_result_of_round, PlayerMoveType, GameResultType};
 
     #[test]
-    fn should_calculate_game_result () {
+    fn should_calculate_game_result_part_1 () {
         let example = "A Y\nB X\nC Z";
 
         let game_result = part1(&parse_input(example));
 
         assert_eq!(15,game_result);
+    }
+
+    #[test]
+    fn should_calculate_game_result_part_2 () {
+        let example = "A Y\nB X\nC Z";
+
+        let game_result = part2(&parse_input(example));
+
+        assert_eq!(12,game_result);
     }
 
     #[test]
@@ -161,21 +211,24 @@ mod test {
 
     #[test]
     fn should_calculate_score_for_win_of_one_round () {
-        let score = calculate_score_of_round("A Y");
+        let example = "A Y";
+        let score = part1(&parse_input(example));
         
         assert_eq!(8 ,score)
     }
 
     #[test]
     fn should_calculate_score_for_loss_of_one_round () {
-        let score = calculate_score_of_round("B X");
+        let example = "B X";
+        let score = part1(&parse_input(example));
         
         assert_eq!(1 ,score)
     }
 
     #[test]
     fn should_calculate_score_for_draw_of_one_round () {
-        let score = calculate_score_of_round("C Z");
+        let example = "C Z";
+        let score = part1(&parse_input(example));
         
         assert_eq!(6 ,score)
     }

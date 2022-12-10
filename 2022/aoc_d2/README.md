@@ -46,3 +46,10 @@ Following the Elf's instructions for the second column, what would your total sc
 
 Answer: 12411
  
+
+Learnings:
+- Syntax of struct and enum
+- How a static struct can be defined
+- How a switch (match) is used in Rust
+- Traits for Rust
+- Debugging of tests in visual studio code

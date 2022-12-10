@@ -23,7 +23,6 @@ struct RockPaperScissorScores {
     result_type: PlayerMoveType
 }
 
-
 struct RockPaperScissorIndicator {
     move_type: PlayerMoveType,
     indicator: [&'static str; 2]
@@ -53,7 +52,6 @@ fn get_moves_of_players_for_round(player_move_inputs: &str) -> (PlayerMoveType, 
     let enemy_move = get_move(&player_moves, 0);
     let my_move = get_move(&player_moves, 1);
 
-
     (enemy_move.unwrap(), my_move.unwrap())
 }
 
@@ -62,7 +60,6 @@ fn get_strategy_guide_for_round(player_move_inputs: &str) -> (PlayerMoveType, Ga
     
     let opponent_move = get_move(&strategy_tipps, 0);
     let strategy_guide = get_tip(strategy_tipps.get(1).unwrap());
-
 
     (opponent_move.unwrap(), strategy_guide)
 }

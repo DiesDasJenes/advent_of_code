@@ -67,7 +67,7 @@ fn get_strategy_guide_for_round(player_move_inputs: &str) -> (PlayerMoveType, Ga
     (opponent_move.unwrap(), strategy_guide)
 }
 
-fn get_move(player_moves: &Vec<&str>, index: usize) -> Option<PlayerMoveType> {
+fn get_move(player_moves: &[&str], index: usize) -> Option<PlayerMoveType> {
     MOVE_INDICATOR.iter()
     .find(|x| x.indicator.contains(player_moves.get(index).unwrap()))
     .map(|s| s.move_type)
@@ -75,9 +75,9 @@ fn get_move(player_moves: &Vec<&str>, index: usize) -> Option<PlayerMoveType> {
 
 fn get_tip(player_moves: &str) -> GameResultType {
     match player_moves {
-        "X" => return GameResultType::Lose,
-        "Y" => return GameResultType::Draw,
-        "Z" => return GameResultType::Win,
+        "X" => GameResultType::Lose,
+        "Y" => GameResultType::Draw,
+        "Z" => GameResultType::Win,
         _ => panic!("THIS CHARACTER WAS NOT FOUND")
     }
 }
@@ -123,7 +123,7 @@ fn parse_input(puzzle_input: &str) -> Input {
 fn part1(input: &Input) -> u32 {
     let mut total_score: u32 = 0;
     for round in input.iter() {
-        let result_of_round = determine_result_of_round(&round);
+        let result_of_round = determine_result_of_round(round);
     
         let game_score = GAME_RESULT_SCORES.iter().find(|x| result_of_round.0.eq(&x.result_type)).map(|f| f.score).unwrap();
         let move_score = MOVE_SCORES.iter().find(|x| result_of_round.1.eq(&x.result_type)).map(|f| f.score).unwrap();
@@ -137,7 +137,7 @@ fn part1(input: &Input) -> u32 {
 fn part2(input: &Input) -> u32 {
     let mut total_score: u32 = 0;
     for round in input.iter() {
-        let result_of_round = determine_result_of_round_with_tips(&round);
+        let result_of_round = determine_result_of_round_with_tips(round);
     
         let game_score = GAME_RESULT_SCORES.iter().find(|x| result_of_round.0.eq(&x.result_type)).map(|f| f.score).unwrap();
         let move_score = MOVE_SCORES.iter().find(|x| result_of_round.1.eq(&x.result_type)).map(|f| f.score).unwrap();

@@ -4,7 +4,7 @@ type Input<'a> = Vec<&'a str>;
 
 fn parse_input(puzzle_input: &str) -> Input  {
     let parsed_input = puzzle_input
-    .split("\n")
+    .split('\n')
     .map(|line| line.trim())
     .collect();
     
@@ -12,7 +12,7 @@ fn parse_input(puzzle_input: &str) -> Input  {
 }
 
 fn get_tuple(sectors: &str) -> std::ops::RangeInclusive<u32> {
-    let mut split = sectors.split("-");
+    let mut split = sectors.split('-');
     
     
     let left_number = split.next().unwrap().parse().unwrap();
@@ -23,15 +23,15 @@ fn get_tuple(sectors: &str) -> std::ops::RangeInclusive<u32> {
 }
 
 fn has_sector_contain_another_sector(line: Vec<&str>) -> bool {
-    let left = get_tuple(line.get(0).unwrap());
+    let left = get_tuple(line.first().unwrap());
     let right = get_tuple(line.get(1).unwrap());
     
-    left.contains(&right.start()) && left.contains(&right.end()) ||
-    right.contains(&left.start()) && right.contains(&left.end())
+    left.contains(right.start()) && left.contains(right.end()) ||
+    right.contains(left.start()) && right.contains(left.end())
 }
 
 fn has_overlaping_sector(line: Vec<&str>) -> bool {
-    let left = get_tuple(line.get(0).unwrap());
+    let left = get_tuple(line.first().unwrap());
     let right = get_tuple(line.get(1).unwrap());
     // (StartA <= EndB) and (EndA >= StartB)
     left.start() <= right.end() && left.end() >= right.start()
@@ -40,7 +40,7 @@ fn has_overlaping_sector(line: Vec<&str>) -> bool {
 fn part1(input: &Input) -> u32 {
     let mut total_score: u32 = 0;
     for line in input {
-        if has_sector_contain_another_sector(line.split(",").collect()) {
+        if has_sector_contain_another_sector(line.split(',').collect()) {
             total_score += 1;
         }
     }
@@ -50,7 +50,7 @@ fn part1(input: &Input) -> u32 {
 fn part2(input: &Input) -> u32 {
     let mut total_score: u32 = 0;
     for line in input {
-        if has_overlaping_sector(line.split(",").collect()) {
+        if has_overlaping_sector(line.split(',').collect()) {
             total_score += 1;
         }
     }
@@ -110,7 +110,7 @@ mod test {
         let parsed_example = parse_input(example);
 
         assert_eq!(parsed_example.len(),6);
-        assert_eq!(parsed_example.get(0).unwrap().to_owned(), "2-4,6-8");
+        assert_eq!(parsed_example.first().unwrap().to_owned(), "2-4,6-8");
     }
 
     #[test]

@@ -1,4 +1,4 @@
-use std::{fs, ops::Index, collections::HashSet};
+use std::{fs, collections::HashSet};
 
 type Input<'a> = Vec<(&'a str,&'a str)>; 
 
@@ -17,9 +17,9 @@ fn parse_input(puzzle_input: &str) -> Input {
 
 fn find_intersection_character(input: &(&str,&str)) -> char {
     let leftside: HashSet<char> = input.0.chars().collect();
-    let intersetion_char = input.1.chars().find(|c| leftside.contains(&c)).unwrap();
+    let intersetion_char = input.1.chars().find(|c| leftside.contains(c)).unwrap();
     
-    return intersetion_char;
+    intersetion_char
 }
 
 fn find_intersection_character_in_list(input: Vec<String>) -> char {
@@ -28,13 +28,13 @@ fn find_intersection_character_in_list(input: Vec<String>) -> char {
 
     for (index, line) in input.iter().enumerate() {
         if index != 0 {
-        let chars: Vec<char> = line.chars().into_iter().filter(|c| first_line.contains(&c)).collect();
+        let chars: Vec<char> = line.chars().into_iter().filter(|c| first_line.contains(c)).collect();
         intersection_chars.push(chars);
         }
     }
     
-    let intersection_char = intersection_chars.get(0).unwrap().iter().find(|c| intersection_chars.get(1).unwrap().contains(&c)).unwrap();
-    return intersection_char.to_owned();
+    let intersection_char = intersection_chars.get(0).unwrap().iter().find(|c| intersection_chars.get(1).unwrap().contains(c)).unwrap();
+    intersection_char.to_owned()
 }
 
 fn calculate_priority_for(char: char) -> u32 {
@@ -98,7 +98,7 @@ mod test {
         wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
         ttgJtRGJQctTZtZT
         CrZsJsPPZsGzwwsLwLmpwMDw";
-        let parsed_input = parse_input(&example);
+        let parsed_input = parse_input(example);
         let result = part1(&parsed_input);
 
         assert_eq!(result,157);
@@ -112,7 +112,7 @@ mod test {
         wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
         ttgJtRGJQctTZtZT
         CrZsJsPPZsGzwwsLwLmpwMDw";
-        let parsed_input = parse_input(&example);
+        let parsed_input = parse_input(example);
         let result = part2(&parsed_input);
 
         assert_eq!(result,70);
@@ -130,8 +130,8 @@ mod test {
         let parsed_example = parse_input(example);
 
         assert_eq!(parsed_example.len(),6);
-        assert_eq!(parsed_example.get(0).unwrap().0,"vJrwpWtwJgWr");
-        assert_eq!(parsed_example.get(0).unwrap().1,"hcsFMMfFFhFp");
+        assert_eq!(parsed_example.first().unwrap().0,"vJrwpWtwJgWr");
+        assert_eq!(parsed_example.first().unwrap().1,"hcsFMMfFFhFp");
         assert_eq!(parsed_example.get(1).unwrap().0,"jqHRNqRjqzjGDLGL");
         assert_eq!(parsed_example.get(1).unwrap().1,"rsFMfFZSrLrFZsSL");
     }
@@ -172,8 +172,8 @@ mod test {
     fn should_find_intersection_in_chunk () {
         let example = vec![
             String::from("vJrwpWtwJgWrhcsFMMfFFhFp"),
-         String::from("jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL"),
-          String::from("PmmdzqPrVvPwwTWBwg")];
+            String::from("jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL"),
+            String::from("PmmdzqPrVvPwwTWBwg")];
 
         let result = find_intersection_character_in_list(example);
 

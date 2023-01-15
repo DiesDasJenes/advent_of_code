@@ -45,28 +45,29 @@ fn parse_input(puzzle_input: &str) -> Input  {
 }
 
 fn transform_line_to_instruction(line: &&str) -> CargoCraneInstruction{
-    let mut split_line = line.split_whitespace();
+    let mut split_line = line.split_ascii_whitespace()
+    .filter_map(|token| token.parse().ok());
     
     CargoCraneInstruction{
-        amount: split_line.nth(1).unwrap().parse().unwrap(),
-        source: split_line.nth(1).unwrap().parse().unwrap(),
-        target: split_line.nth(1).unwrap().parse().unwrap()
+        amount: split_line.next().unwrap(),
+        source: split_line.next().unwrap(),
+        target: split_line.next().unwrap()
     }
 }
 
-fn get_top_crate_of_each_stack(container_map: &Vec<Vec<char>>) -> Vec<char> {
-    container_map.iter().map(|stack| stack[stack.len()-1]).collect()
+fn get_top_crate_of_each_stack(container_map: &[Vec<char>]) -> String {
+    container_map.iter().filter_map(|stack| stack.iter().last()).collect()
 }
 
-fn part1(input: &Input, container_map: &mut Vec<Vec<char>>) -> Vec<char> {
+fn part1(input: &Input, container_map: &mut Vec<Vec<char>>) -> String {
     move_crates(input, container_map, true)
 }
 
-fn part2(input: &Vec<&str>, container_map: &mut Vec<Vec<char>>) -> Vec<char> {
+fn part2(input: &Vec<&str>, container_map: &mut Vec<Vec<char>>) -> String {
     move_crates(input, container_map, false)
 }
 
-fn move_crates(input: &Vec<&str>, container_map: &mut Vec<Vec<char>>, revert: bool) -> Vec<char> {
+fn move_crates(input: &Vec<&str>, container_map: &mut Vec<Vec<char>>, revert: bool) -> String {
     for line in input {
         let instruction = transform_line_to_instruction(line);
         let source_stack: &mut Vec<char> = &mut container_map[instruction.source - 1];
@@ -90,10 +91,10 @@ fn main() {
     let parsed_input = parse_input(&puzzle_input);
     
     let mut container_map = CONTAINER_MAP.clone();
-    println!("Part 1: {:?}", part1(&parsed_input, &mut container_map).iter().collect::<String>());
+    println!("Part 1: {:?}", part1(&parsed_input, &mut container_map));
 
     let mut container_map = CONTAINER_MAP.clone();
-    println!("Part 2: {:?}", part2(&parsed_input, &mut container_map).iter().collect::<String>());
+    println!("Part 2: {:?}", part2(&parsed_input, &mut container_map));
 }
 
 #[cfg(test)]
@@ -166,7 +167,7 @@ mod test {
 
         let actual = get_top_crate_of_each_stack(&example);
 
-        assert_eq!(actual,vec!['N','D','P']);
+        assert_eq!(actual,"NDP");
     }
 
        

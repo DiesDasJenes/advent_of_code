@@ -55,11 +55,7 @@ fn transform_line_to_instruction(line: &&str) -> CargoCraneInstruction{
 }
 
 fn get_top_crate_of_each_stack(container_map: &Vec<Vec<char>>) -> Vec<char> {
-    let mut end_result: Vec<char> = vec![];
-    for stack in container_map  {
-        end_result.push(*stack.last().unwrap())
-    }   
-    end_result
+    container_map.iter().map(|crates| crates[crates.len()-1]).collect()
 }
 
 fn part1(input: &Input, container_map: &mut Vec<Vec<char>>) -> Vec<char> {
@@ -73,18 +69,14 @@ fn part2(input: &Vec<&str>, container_map: &mut Vec<Vec<char>>) -> Vec<char> {
 fn move_crates(input: &Vec<&str>, container_map: &mut Vec<Vec<char>>, revert: bool) -> Vec<char> {
     for line in input {
         let instruction = transform_line_to_instruction(line);
-        let source_stack: &mut Vec<char> = container_map.get_mut(instruction.source-1).unwrap();
+        let source_stack: &mut Vec<char> = &mut container_map[instruction.source - 1];
         let mut moving_crates = vec![];
         if revert {
-            for crates in source_stack.drain(source_stack.len()-instruction.amount..source_stack.len()).rev() {
-                moving_crates.push(crates)
-            }
+            moving_crates.extend(source_stack.drain(source_stack.len()-instruction.amount..).rev()) 
         } else {
-            for crates in source_stack.drain(source_stack.len()-instruction.amount..source_stack.len()) {
-                moving_crates.push(crates)
-            }
+            moving_crates.extend(source_stack.drain(source_stack.len()-instruction.amount..))
         }
-        let target_stack: &mut Vec<char>  = container_map.get_mut(instruction.target-1).unwrap();
+        let target_stack: &mut Vec<char>  = &mut container_map[instruction.target - 1];
         target_stack.append(&mut moving_crates);
     }
     get_top_crate_of_each_stack(container_map)

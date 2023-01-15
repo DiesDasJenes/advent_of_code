@@ -30,9 +30,9 @@ lazy_static! {
 type Input<'a> = Vec<&'a str>; 
 
 struct CargoCraneInstruction {
-    amount: u16,
-    source: u16,
-    target: u16,
+    amount: usize,
+    source: usize,
+    target: usize,
 }
 
 fn parse_input(puzzle_input: &str) -> Input  {
@@ -58,17 +58,22 @@ fn get_top_crate_of_each_stack(container_map: &Vec<Vec<char>>) -> Vec<char> {
     let mut end_result: Vec<char> = vec![];
     for stack in container_map  {
         end_result.push(*stack.last().unwrap())
-    }
+    }   
     end_result
 }
 
-fn part1(input: &Input) -> Vec<char> {
-    let mut container_map = &CONTAINER_MAP;
+fn part1(input: &Input, container_map: &mut Vec<Vec<char>>) -> Vec<char> {
     for line in input {
         let instruction = transform_line_to_instruction(line);
-        
+        let source_stack: &mut Vec<char> = container_map.get_mut(instruction.source-1).unwrap();
+        let mut moving_crates = vec![];
+        for crates in source_stack.drain(source_stack.len()-instruction.amount..source_stack.len()).rev() {
+            moving_crates.push(crates)
+        }
+        let target_stack: &mut Vec<char>  = container_map.get_mut(instruction.target-1).unwrap();
+        target_stack.append(&mut moving_crates);
     }
-    vec![]
+    get_top_crate_of_each_stack(&container_map)
 }
 
 fn part2(input: &Input) -> u32 {
@@ -80,8 +85,9 @@ fn part2(input: &Input) -> u32 {
 fn main() {
     let puzzle_input = fs::read_to_string("resources/puzzle_input.txt").unwrap();
     let parsed_input = parse_input(&puzzle_input);
+    let mut container_map = CONTAINER_MAP.clone();
 
-    println!("Part 1: {:?}", part1(&parsed_input));
+    println!("Part 1: {:?}", part1(&parsed_input, &mut container_map).iter().collect::<String>());
     println!("Part 2: {}", part2(&parsed_input));
 }
 
@@ -89,12 +95,29 @@ fn main() {
 mod test {
     use crate::{part1,part2,parse_input,transform_line_to_instruction, get_top_crate_of_each_stack};
 
-    fn getTestContainerMap() -> Vec<Vec<char>> {
+    fn get_test_container_map() -> Vec<Vec<char>> {
         return vec![
             vec!['Z','N'],
             vec!['M','C', 'D'],
             vec!['P'],
         ];
+    }
+
+    #[test]
+    fn should_solve_part_1 () {
+        let mut container_map = get_test_container_map();
+        let example = vec![
+            "move 1 from 2 to 1",
+            "move 3 from 1 to 3",
+            "move 2 from 2 to 1",
+            "move 1 from 1 to 2"
+        ];
+
+        let parsed_example = part1(&example, &mut container_map);
+
+        assert_eq!(parsed_example,vec!['C','M','Z']);
+
+        
     }
 
     #[test]
@@ -121,7 +144,7 @@ mod test {
 
     #[test]
     fn should_return_vec_of_top_of_each_stack () {
-        let example = getTestContainerMap();
+        let example = get_test_container_map();
 
         let actual = get_top_crate_of_each_stack(&example);
 

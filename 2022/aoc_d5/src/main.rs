@@ -1,16 +1,5 @@
 use std::{fs};
 use lazy_static::lazy_static;
-/*
-[N]     [C]                 [Q]    
-[W]     [J] [L]             [J] [V]
-[F]     [N] [D]     [L]     [S] [W]
-[R] [S] [F] [G]     [R]     [V] [Z]
-[Z] [G] [Q] [C]     [W] [C] [F] [G]
-[S] [Q] [V] [P] [S] [F] [D] [R] [S]
-[M] [P] [R] [Z] [P] [D] [N] [N] [M]
-[D] [W] [W] [F] [T] [H] [Z] [W] [R]
- 1   2   3   4   5   6   7   8   9 
-*/
 
 lazy_static! {
     #[derive(Debug)]
@@ -29,7 +18,7 @@ lazy_static! {
 
 type Input<'a> = Vec<&'a str>; 
 
-struct CargoCraneInstruction {
+pub struct CargoCraneInstruction {
     amount: usize,
     source: usize,
     target: usize,
@@ -59,14 +48,6 @@ fn get_top_crate_of_each_stack(container_map: &[Vec<char>]) -> String {
     container_map.iter().filter_map(|stack| stack.iter().last()).collect()
 }
 
-fn part1(input: &Input, container_map: &mut Vec<Vec<char>>) -> String {
-    move_crates(input, container_map, true)
-}
-
-fn part2(input: &Vec<&str>, container_map: &mut Vec<Vec<char>>) -> String {
-    move_crates(input, container_map, false)
-}
-
 fn move_crates(input: &Vec<&str>, container_map: &mut Vec<Vec<char>>, revert: bool) -> String {
     for line in input {
         let instruction = transform_line_to_instruction(line);
@@ -83,23 +64,20 @@ fn move_crates(input: &Vec<&str>, container_map: &mut Vec<Vec<char>>, revert: bo
     get_top_crate_of_each_stack(container_map)
 }
 
-
-
-
 fn main() {
     let puzzle_input = fs::read_to_string("resources/puzzle_input.txt").unwrap();
     let parsed_input = parse_input(&puzzle_input);
     
     let mut container_map = CONTAINER_MAP.clone();
-    println!("Part 1: {:?}", part1(&parsed_input, &mut container_map));
+    println!("Part 1: {:?}", move_crates(&parsed_input, &mut container_map, true));
 
     let mut container_map = CONTAINER_MAP.clone();
-    println!("Part 2: {:?}", part2(&parsed_input, &mut container_map));
+    println!("Part 2: {:?}", move_crates(&parsed_input, &mut container_map, false));
 }
 
 #[cfg(test)]
 mod test {
-    use crate::{part1,part2,parse_input,transform_line_to_instruction, get_top_crate_of_each_stack};
+    use crate::{parse_input,transform_line_to_instruction, get_top_crate_of_each_stack, move_crates};
 
     fn get_test_container_map() -> Vec<Vec<char>> {
         vec![
@@ -119,9 +97,9 @@ mod test {
             "move 1 from 1 to 2"
         ];
 
-        let parsed_example = part1(&example, &mut container_map);
+        let parsed_example = move_crates(&example, &mut container_map, true);
 
-        assert_eq!(parsed_example,vec!['C','M','Z']); 
+        assert_eq!(parsed_example,"CMZ"); 
     }
 
     #[test]
@@ -134,9 +112,9 @@ mod test {
             "move 1 from 1 to 2"
         ];
 
-        let parsed_example = part2(&example, &mut container_map);
+        let parsed_example = move_crates(&example, &mut container_map, false);
 
-        assert_eq!(parsed_example,vec!['M','C','D']); 
+        assert_eq!(parsed_example,"MCD"); 
     }
 
     #[test]

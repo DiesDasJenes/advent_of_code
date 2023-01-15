@@ -55,7 +55,7 @@ fn transform_line_to_instruction(line: &&str) -> CargoCraneInstruction{
 }
 
 fn get_top_crate_of_each_stack(container_map: &Vec<Vec<char>>) -> Vec<char> {
-    container_map.iter().map(|crates| crates[crates.len()-1]).collect()
+    container_map.iter().map(|stack| stack[stack.len()-1]).collect()
 }
 
 fn part1(input: &Input, container_map: &mut Vec<Vec<char>>) -> Vec<char> {

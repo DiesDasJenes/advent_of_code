@@ -47,7 +47,7 @@ fn parse_input(puzzle_input: &str) -> Input  {
 fn transform_line_to_instruction(line: &&str) -> CargoCraneInstruction{
     let mut split_line = line.split_whitespace();
     
-    return CargoCraneInstruction{
+    CargoCraneInstruction{
         amount: split_line.nth(1).unwrap().parse().unwrap(),
         source: split_line.nth(1).unwrap().parse().unwrap(),
         target: split_line.nth(1).unwrap().parse().unwrap()
@@ -76,18 +76,18 @@ fn move_crates(input: &Vec<&str>, container_map: &mut Vec<Vec<char>>, revert: bo
         let source_stack: &mut Vec<char> = container_map.get_mut(instruction.source-1).unwrap();
         let mut moving_crates = vec![];
         if revert {
-        for crates in source_stack.drain(source_stack.len()-instruction.amount..source_stack.len()).rev() {
-            moving_crates.push(crates)
+            for crates in source_stack.drain(source_stack.len()-instruction.amount..source_stack.len()).rev() {
+                moving_crates.push(crates)
+            }
+        } else {
+            for crates in source_stack.drain(source_stack.len()-instruction.amount..source_stack.len()) {
+                moving_crates.push(crates)
+            }
         }
-    } else {
-        for crates in source_stack.drain(source_stack.len()-instruction.amount..source_stack.len()) {
-            moving_crates.push(crates)
-        }
-    }
         let target_stack: &mut Vec<char>  = container_map.get_mut(instruction.target-1).unwrap();
         target_stack.append(&mut moving_crates);
     }
-    get_top_crate_of_each_stack(&container_map)
+    get_top_crate_of_each_stack(container_map)
 }
 
 
@@ -109,11 +109,11 @@ mod test {
     use crate::{part1,part2,parse_input,transform_line_to_instruction, get_top_crate_of_each_stack};
 
     fn get_test_container_map() -> Vec<Vec<char>> {
-        return vec![
+        vec![
             vec!['Z','N'],
             vec!['M','C', 'D'],
             vec!['P'],
-        ];
+        ]
     }
 
     #[test]

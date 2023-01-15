@@ -63,32 +63,45 @@ fn get_top_crate_of_each_stack(container_map: &Vec<Vec<char>>) -> Vec<char> {
 }
 
 fn part1(input: &Input, container_map: &mut Vec<Vec<char>>) -> Vec<char> {
+    move_crates(input, container_map, true)
+}
+
+fn part2(input: &Vec<&str>, container_map: &mut Vec<Vec<char>>) -> Vec<char> {
+    move_crates(input, container_map, false)
+}
+
+fn move_crates(input: &Vec<&str>, container_map: &mut Vec<Vec<char>>, revert: bool) -> Vec<char> {
     for line in input {
         let instruction = transform_line_to_instruction(line);
         let source_stack: &mut Vec<char> = container_map.get_mut(instruction.source-1).unwrap();
         let mut moving_crates = vec![];
+        if revert {
         for crates in source_stack.drain(source_stack.len()-instruction.amount..source_stack.len()).rev() {
             moving_crates.push(crates)
         }
+    } else {
+        for crates in source_stack.drain(source_stack.len()-instruction.amount..source_stack.len()) {
+            moving_crates.push(crates)
+        }
+    }
         let target_stack: &mut Vec<char>  = container_map.get_mut(instruction.target-1).unwrap();
         target_stack.append(&mut moving_crates);
     }
     get_top_crate_of_each_stack(&container_map)
 }
 
-fn part2(input: &Input) -> u32 {
-    let mut total_score: u32 = 0;
-    total_score
-}
+
 
 
 fn main() {
     let puzzle_input = fs::read_to_string("resources/puzzle_input.txt").unwrap();
     let parsed_input = parse_input(&puzzle_input);
+    
     let mut container_map = CONTAINER_MAP.clone();
-
     println!("Part 1: {:?}", part1(&parsed_input, &mut container_map).iter().collect::<String>());
-    println!("Part 2: {}", part2(&parsed_input));
+
+    let mut container_map = CONTAINER_MAP.clone();
+    println!("Part 2: {:?}", part2(&parsed_input, &mut container_map).iter().collect::<String>());
 }
 
 #[cfg(test)]
@@ -115,9 +128,22 @@ mod test {
 
         let parsed_example = part1(&example, &mut container_map);
 
-        assert_eq!(parsed_example,vec!['C','M','Z']);
+        assert_eq!(parsed_example,vec!['C','M','Z']); 
+    }
 
-        
+    #[test]
+    fn should_solve_part_2_non_revert_stack () {
+        let mut container_map = get_test_container_map();
+        let example = vec![
+            "move 1 from 2 to 1",
+            "move 3 from 1 to 3",
+            "move 2 from 2 to 1",
+            "move 1 from 1 to 2"
+        ];
+
+        let parsed_example = part2(&example, &mut container_map);
+
+        assert_eq!(parsed_example,vec!['M','C','D']); 
     }
 
     #[test]

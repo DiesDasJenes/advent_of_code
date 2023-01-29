@@ -37,9 +37,9 @@ fn main() {
     let puzzle_input = fs::read_to_string("resources/puzzle_input.txt").unwrap();
     let parsed_input = parse_input(&puzzle_input);
     
-    println!("Part 1: {:?}", find_marker(parsed_input.get(0).unwrap(), 4));
+    println!("Part 1: {:?}", find_marker(parsed_input.first().unwrap(), 4));
 
-    println!("Part 2: {:?}", find_marker(parsed_input.get(0).unwrap(), 14));
+    println!("Part 2: {:?}", find_marker(parsed_input.first().unwrap(), 14));
 }
 
 #[cfg(test)]
@@ -48,11 +48,11 @@ mod test {
     use rstest::rstest;
 
     fn get_test_input() -> Vec<&'static str> {
-        return vec!["mjqjpqmgbljsphdztnvjfqwrcgsmlb",
+        vec!["mjqjpqmgbljsphdztnvjfqwrcgsmlb",
                     "bvwbjplbgvbhsrlpgdmjqwftvncz",
                     "nppdvjthqldpwncqszvftbrmjlhg",
                     "nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg",
-                    "zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw"];
+                    "zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw"]
     }
 
     #[rstest]

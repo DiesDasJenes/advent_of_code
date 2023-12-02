@@ -4,13 +4,13 @@ use std::fs;
 type Input<'a> = Vec<&'a str>; 
 struct LineParser;
 impl LineParser {
-    fn parse_without_digits_as_word(&self, line:&str) -> Vec<u32> {
+    fn parse_without_numbers_as_word(&self, line:&str) -> Vec<u32> {
         return line.chars()
         .filter_map(|c| c.to_digit(10))
         .collect();
     }
 
-    fn parse_with_digits_as_word(&self, line:&str) -> Vec<u32> {
+    fn parse_with_numbers_as_word(&self, line:&str) -> Vec<u32> {
         let mut current_index = 0;
         let mut result = Vec::new();
 
@@ -66,14 +66,14 @@ fn parse_input(puzzle_input: &str) -> Input {
 }
 
 fn part1(input: &Input) -> u32 {
-    input.iter().map(|&line| get_digit_from(LineParser::parse_without_digits_as_word, line)).sum()
+    input.iter().map(|&line| get_sum_of_digits(LineParser::parse_without_numbers_as_word, line)).sum()
 }
 
 fn part2(input: &Input) -> u32 {
-    input.iter().map(|&line| get_digit_from(LineParser::parse_with_digits_as_word, line)).sum()
+    input.iter().map(|&line| get_sum_of_digits(LineParser::parse_with_numbers_as_word, line)).sum()
 }
 
-fn get_digit_from(operation: fn(&LineParser, &str) -> Vec<u32>, line: &str) -> u32 {
+fn get_sum_of_digits(operation: fn(&LineParser, &str) -> Vec<u32>, line: &str) -> u32 {
     let line_parser = LineParser;
     let mut numbers: Vec<u32> = operation(&line_parser, line);
     
@@ -104,7 +104,7 @@ fn main() {
 mod test {
     use rstest::rstest;
 
-    use crate::{parse_input, part1, part2, get_digit_from, LineParser};
+    use crate::{parse_input, part1, part2, get_sum_of_digits, LineParser};
 
     #[test]
     fn should_return_parsed_input () {
@@ -124,7 +124,7 @@ mod test {
         case("pqr3stu8vwx", 38),
     )]
     fn should_return_first_and_last_digit_in_string_with_two_digits_in_the_string (digits: &str, expected: u32) {
-        let digit = get_digit_from(LineParser::parse_without_digits_as_word,&digits);
+        let digit = get_sum_of_digits(LineParser::parse_without_numbers_as_word,&digits);
 
         assert_eq!(digit,expected);
     }
@@ -133,7 +133,7 @@ mod test {
     fn should_find_first_and_last_digit_in_string_with_several_digits_in_the_string () {
         let example = "a1b2c3d4e5f";
 
-        let digit = get_digit_from(LineParser::parse_without_digits_as_word,&example);
+        let digit = get_sum_of_digits(LineParser::parse_without_numbers_as_word,&example);
 
         assert_eq!(digit,15);
     }
@@ -142,7 +142,7 @@ mod test {
     fn should_find_only_digit_in_string_and_duplicate_it () {
         let example = "treb7uchet";
 
-        let digit = get_digit_from(LineParser::parse_without_digits_as_word,&example);
+        let digit = get_sum_of_digits(LineParser::parse_without_numbers_as_word,&example);
 
         assert_eq!(digit,77);
     }
@@ -182,7 +182,7 @@ mod test {
         let lineparser = LineParser;
         
         
-        let digit = lineparser.parse_with_digits_as_word(puzzle_input);
+        let digit = lineparser.parse_with_numbers_as_word(puzzle_input);
 
         assert_eq!(digit,vec![8,1,8]);
     }

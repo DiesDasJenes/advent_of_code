@@ -1,4 +1,3 @@
-use core::num;
 use std::fs;
 
 type Input<'a> = Vec<&'a str>; 
@@ -26,7 +25,7 @@ impl LineParser {
             }
         }
 
-        return result
+        result
     }
 
     fn find_word_at_index(&self,substring: &str) -> Option<(&str, u32)> {
@@ -62,7 +61,7 @@ impl LineParser {
 }
 
 fn parse_input(puzzle_input: &str) -> Input {
-    puzzle_input.split("\n").collect()
+    puzzle_input.split('\n').collect()
 }
 
 fn part1(input: &Input) -> u32 {

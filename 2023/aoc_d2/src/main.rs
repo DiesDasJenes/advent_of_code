@@ -10,6 +10,14 @@ fn read_file(file_path: &str) -> io::Result<Vec<String>> {
     Ok(lines)
 }
 
+fn parse_game_number(line: &str) -> u32 {
+    if let Some(number_str) = line.trim().strip_prefix("Game ") {
+        number_str.parse().unwrap_or(0)
+    } else {
+        0
+    }
+}
+
 fn part1(path_to_puzzle_input: &str) -> u32 {
     let mut sum = 0;
     
@@ -18,28 +26,23 @@ fn part1(path_to_puzzle_input: &str) -> u32 {
             for line in lines {
                 
                 let parts: Vec<&str> = line.splitn(2, ':').collect();
-                let mut game_number: u32 = 0;            
+                let game_number: u32 = parse_game_number(parts.first().unwrap());            
                 if let Some(game_info) = parts.last() {
-                    if let Some(number) = parts.first().unwrap().trim().strip_prefix("Game ") {
-                            game_number = number.parse::<u32>().unwrap();
-                    }
-               
-                
-                let game_rounds: Vec<&str> = game_info.split(';').collect();
-                let mut is_valid_game = true;        
-                for round in game_rounds {
-                    let draws: Vec<&str> = round.split(',').map(|draw| draw.trim()).collect();
+                    let game_rounds: Vec<&str> = game_info.split(';').collect();
+                    let mut is_valid_game = true;        
+                    for round in game_rounds {
+                        let draws: Vec<&str> = round.split(',').map(|draw| draw.trim()).collect();
+                        
+                        for draw in &draws {
+                        if is_invalid_move(draw) {
+                            is_valid_game = false
+                        } 
+                        }
                     
-                    for draw in &draws {
-                       if is_invalid_move(draw) {
-                        is_valid_game = false
-                       } 
                     }
-                   
-                }
-                    if is_valid_game {
-                        sum += game_number;
-                    }
+                        if is_valid_game {
+                            sum += game_number;
+                        }
                 }
             }
         }

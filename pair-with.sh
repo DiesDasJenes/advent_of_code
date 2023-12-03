@@ -6,7 +6,7 @@ _find_name() {
   local name="$1"
 
   if [ -n "${name}" ] ; then
-    cat <<EOF |grep -i "${name}" | head -1
+    grep -i "${name}" <<EOF | head -1
 Philipp Ludewig <@diesdasjenes>
 Gabriel Vitali <@gabcvit>
 EOF
@@ -15,22 +15,9 @@ EOF
   fi
 }
 
-_format_issue() {
-  local issue="$1"
-  local jira_board="AoC"
-
-  if [ -z "${issue}" ] ; then
-    echo "${jira_board}-???"
-  elif [[ "${issue}" = *${jira_board}* ]] ; then
-    echo "${issue}"
-  else
-    echo "${jira_board}-${issue}"
-  fi
-}
-
 _extract_abbreviation() {
   local name="$1"
-  echo ${name} | awk -F '[<>]' '{print $2}'
+  echo "${name}" | awk -F '[<>]' '{print $2}'
 } 
 
 _format_pairing_output() {
@@ -40,32 +27,39 @@ _format_pairing_output() {
   pair=$(_extract_abbreviation "${pair}")
   me=$(_extract_abbreviation "${me}")
   
-  if [ -z "${pair}" ] ; then
-    echo ${me} 
-  elif  [ -z "${me}" ]  ; then
-    echo ${pair}
-  else
-    echo "${pair}, ${me}"
-  fi
-
+  [ -z "${pair}" ] && echo "${me}" || [ -z "${me}" ] && echo "${pair}" || echo "${pair}, ${me}"
 }
 
 _create_git_message() {
-  local pairing_constellation=$(_format_pairing_output "$1" "$3")
-  local issue="$2"
- 
-  echo "${issue}: [${pairing_constellation}] Subject "
-  echo 
-  echo "some context/description"
+  local pairing_constellation
+  pairing_constellation=$(_format_pairing_output "$1" "$3")
+  local day="$2"
+  local year="$4"
+  current_year=$(date +'%Y')
+  
+  if [ -n "${pairing_constellation}" ]; then
+    echo "[${year}|${day}]: [${pairing_constellation}] Subject "
+    echo 
+    echo "some context/description"
+  elif [ -z "${year}" ]; then
+    echo "[${current_year}|${day}] Subject "
+    echo 
+    echo "some context/description"
+  else 
+    echo "[${year}|${day}] Subject "
+    echo 
+    echo "some context/description"
+  fi
 }
+
 
 _main() {
   local name="$1"
-  local issue="$2"
+  local day="$2"
   local me="$3"
+  local year="$4"
 
   me=$(_find_name "${me}")
-  issue=$(_format_issue "${issue}")
   
   if [ -z "${LONELY}" ] ; then
     pair=$(_find_name "${name}")
@@ -74,19 +68,20 @@ _main() {
   fi
 
   if [ -z "${DRY_RUN}" ] ; then
-    _create_git_message "${pair}" "${issue}" "${me}" > ./.git/.gitmessage.txt
+    _create_git_message "${pair}" "${day}" "${me}" "${year}"> ./.git/.gitmessage.txt
     git config commit.template "$PWD/.git/.gitmessage.txt"
   else
-    _create_git_message "${pair}" "${issue}" "${me}"
+    _create_git_message "${pair}" "${day}" "${me}" "${year}"
   fi
 }
 
 _usage() {
   cat <<EOF
-Usage: $0 [-n] [-p <partial pair name>] [-m <partial personal name>] [-l] [-i <issue-number>]
+Usage: $0 [-n] [-p <partial pair name>] [-m <partial personal name>] [-l] [-i <day-number>]
 
 Options:
-  -i <issue number> The JIRA issue number
+  -y <current year> The current year 
+  -d <current day> The day of the advent of code calendar
   -p <partial pair name> Part of the pair name
   -m <partial personal name> Part of your name
   -l lonely - you don't have a pair :'-/
@@ -101,16 +96,18 @@ EOF
 
 ME=
 PAIR=
-ISSUE=
+DAY=
+YEAR=
 DRY_RUN=
 LONELY=
 
-while getopts "hi:np:lm:" opt; do
+while getopts "hd:np:lm:y:" opt; do
   case "${opt}" in
     h) _usage ;;
     m) ME="${OPTARG}" ;;
     p) PAIR="${OPTARG}" ;;
-    i) ISSUE="${OPTARG}" ;;
+    d) DAY="${OPTARG}" ;;
+    y) YEAR="${OPTARG}" ;;
     n) DRY_RUN=1 ;;
     l) LONELY=1 ;;
     *) _usage ;;
@@ -123,4 +120,4 @@ if [ ! -d ./.git ] ; then
   _usage
 fi
 
-_main "${PAIR}" "${ISSUE}" "${ME}"
+_main "${PAIR}" "${DAY}" "${ME}" "${YEAR}" 

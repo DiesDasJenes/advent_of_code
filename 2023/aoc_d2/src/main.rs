@@ -1,5 +1,4 @@
 use std::{fs::File, io::{self, BufRead}, collections::HashMap};
-use lazy_static::lazy_static;
 
 fn read_file(file_path: &str) -> io::Result<Vec<String>> {
     
@@ -81,41 +80,30 @@ fn part2(path_to_puzzle_input: &str) -> u32 {
     sum
 }
 
-lazy_static! {
-    static ref CUBES: HashMap<&'static str, u32> = {
-        let mut map = HashMap::new();
-        map.insert("blue", 0);
-        map.insert("red", 0);
-        map.insert("green", 0);
-        map
-    };
-}
-
 fn fewest_number_of_cubes_of_each_color(game_info: &str) -> HashMap<&str, u32> {
-    let game_rounds: Vec<&str> = game_info.split(';').collect();
-    let mut cubes = CUBES.clone();
+    let mut cubes = HashMap::new();
+    for &color in &["blue", "red", "green"] {
+        cubes.insert(color, 0);
+    }
 
-    for round in game_rounds {
-        let draws: Vec<&str> = round.split(',').map(|draw| draw.trim()).collect();        
-            for draw in &draws {
-                let draw_parts: Vec<&str> = draw.split_ascii_whitespace().collect();
+    for round in game_info.split(';') {
+        for draw in round.split(',').map(|draw| draw.trim()) {
+            let draw_parts: Vec<&str> = draw.split_ascii_whitespace().collect();
 
-                match (draw_parts.first(), draw_parts.last()) {
-                (Some(first_part), Some(last_part @ &"red")) if first_part.parse::<u32>().unwrap_or(0) > cubes.get(last_part).cloned().unwrap_or(0) => {
-                    *cubes.get_mut(last_part).unwrap() = first_part.parse::<u32>().unwrap() ;
+            for (first_part, last_part) in draw_parts.iter().zip(draw_parts.iter().rev()) {
+                match (first_part.parse::<u32>().unwrap_or_default(), last_part) {
+                    (first_value, &"red") | (first_value, &"blue") | (first_value, &"green")
+                        if first_value > cubes.get(last_part).cloned().unwrap_or_default() =>
+                    {
+                        cubes.insert(last_part, first_value);
+                    }
+                    _ => {}
                 }
-                (Some(first_part), Some(last_part @ &"blue")) if first_part.parse::<u32>().unwrap_or(0) > cubes.get(last_part).cloned().unwrap_or(0) => {
-                    *cubes.get_mut(last_part).unwrap() = first_part.parse::<u32>().unwrap() ;
-                }
-                (Some(first_part), Some(last_part @ &"green")) if first_part.parse::<u32>().unwrap_or(0) > cubes.get(last_part).cloned().unwrap_or(0) => {
-                    *cubes.get_mut(last_part).unwrap() = first_part.parse::<u32>().unwrap() ;
-                }
-                _ => {}
             }
-         }
-    
         }
-        cubes
+    }
+
+    cubes
 }
 
 

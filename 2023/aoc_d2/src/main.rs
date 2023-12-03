@@ -106,9 +106,6 @@ fn fewest_number_of_cubes_of_each_color(game_info: &str) -> HashMap<&str, u32> {
     cubes
 }
 
-
-
-
 fn main() {
     println!("Part 1: {}", part1("resources/puzzle_input.txt"));
     println!("Part 2: {}", part2("resources/puzzle_input.txt"));

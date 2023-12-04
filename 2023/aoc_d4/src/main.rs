@@ -1,75 +1,68 @@
-use std::{fs::File, io::{self, BufRead}, collections::{HashMap, HashSet}};
+use std::{
+    collections::{HashMap, HashSet},
+    fs::File,
+    io::{self, BufRead},
+    path::Path,
+};
 
 fn read_file(file_path: &str) -> io::Result<Vec<String>> {
-    
     let file = File::open(file_path)?;
     let reader = io::BufReader::new(file);
-
-    let lines: Vec<String> = reader.lines().map(|line| line.unwrap()).collect();
-
+    let lines: Vec<String> = reader.lines().collect::<Result<_, _>>()?;
     Ok(lines)
 }
 
-fn part1(path_to_puzzle_input: &str) -> u32 {
-    let mut sum = 0;
+fn process_line(line: &str) -> u32 {
+    let parts: Vec<&str> = line.split('|').collect();
+
+    let left_numbers: Vec<u32> = parts[0]
+        .split_whitespace()
+        .filter_map(|s| s.parse().ok())
+        .collect();
+
+    let right_numbers: HashSet<u32> = parts[1]
+        .split_whitespace()
+        .filter_map(|s| s.parse().ok())
+        .collect();
+
     let mut count = 0;
-    match read_file(path_to_puzzle_input) {
-        Ok(lines) => {
-            for line in lines {
-                let parts: Vec<&str> = line.split('|').collect();
 
-                let left_numbers: Vec<u32> = parts[0]
-                    .split_whitespace()
-                    .filter_map(|s| s.parse().ok())
-                    .collect();
-
-                let right_numbers: HashSet<u32> = parts[1]
-                    .split_whitespace()
-                    .filter_map(|s| s.parse().ok())
-                    .collect();
-                
-
-                
-                for &num in &left_numbers {
-                    if right_numbers.contains(&num) {
-                        if count == 0 {
-                            count += 1
-                        } else {
-                            count *=2;
-                        }
-                    }
-                }
-                
-            sum += count;
-            count = 0
+    for &num in &left_numbers {
+        if right_numbers.contains(&num) {
+            if count == 0 {
+                count += 1;
+            } else {
+                count *= 2;
             }
-            
         }
-        Err(err) => eprintln!("Error reading file: {}", err),
     }
 
-    sum
+    count
 }
 
-fn part2(path_to_puzzle_input: &str) -> u32 {
-    let mut sum = 0;
-    
+fn part1(path_to_puzzle_input: &str) -> u32 {
     match read_file(path_to_puzzle_input) {
-        Ok(lines) => {
-            for line in lines {
-                
-            }
+        Ok(lines) => lines.into_iter().map(|line| process_line(&line)).sum(),
+        Err(err) => {
+            eprintln!("Error reading file: {}", err);
+            0
         }
-        Err(err) => eprintln!("Error reading file: {}", err),
     }
-    
-    sum
+}
+
+fn part2(_path_to_puzzle_input: &str) -> u32 {
+    // Add your implementation for part 2 here
+    // Return the result
+    0
 }
 
 fn main() {
-    println!("Part 1: {}", part1("resources/puzzle_input.txt"));
-    println!("Part 2: {}", part2("resources/puzzle_input.txt"));
+    let puzzle_input_path = "resources/puzzle_input.txt";
+    println!("Part 1: {}", part1(puzzle_input_path));
+    // Uncomment the line below when you have implemented part 2
+    // println!("Part 2: {}", part2(puzzle_input_path));
 }
+
 
 #[cfg(test)]
 mod test {

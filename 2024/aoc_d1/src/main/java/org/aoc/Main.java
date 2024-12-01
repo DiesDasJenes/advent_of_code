@@ -11,7 +11,7 @@ public class Main {
     long solutionPartOne = Solution.partOne(input);
     System.out.println("Part One: " + solutionPartOne);
 
-    long solutionPartTwo = Solution.partTwo();
+    long solutionPartTwo = Solution.partTwo(input);
     System.out.println("Part Two: " + solutionPartTwo);
   }
 }
